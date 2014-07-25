@@ -22,7 +22,7 @@ gulp.task('styles', function () {
 
 
 gulp.task('watch', function() {
-  gulp.src('./src/*.less')
+  gulp.src('./src/**/*.less')
     .pipe(watch({ emit: 'all' }, function(files) {
       gulp.run('styles');
     }));
