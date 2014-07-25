@@ -1,0 +1,40 @@
+/*** container.less ***/
+
+.container {
+  padding-left: @grid-gutter-width / 2;
+  padding-right: @grid-gutter-width / 2;
+  margin-left: auto;
+  margin-right: auto;
+    
+  box-sizing: border-box;
+  
+  &-fluid {
+    width: 100%;
+  }
+}
+
+@media (min-width: @sm-min-width) {
+  .container {
+    width: @sm-min-width; 
+  }
+}
+
+@media (min-width: @md-min-width) {
+  .container {
+    width: @md-min-width; 
+  }
+}
+
+@media (min-width: @lg-min-width) {
+  .container {
+    width: @lg-min-width; 
+  }
+}
+
+/*** 3. Row ***/
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
