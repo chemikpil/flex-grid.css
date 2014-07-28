@@ -13,21 +13,15 @@
   }
 }
 
-@media (min-width: @sm-min-width) {
-  .container {
-    width: @sm-min-width; 
-  }
-}
-
 @media (min-width: @md-min-width) {
   .container {
-    width: @md-min-width; 
+    width: @md-min-width - 22px; 
   }
 }
 
 @media (min-width: @lg-min-width) {
   .container {
-    width: @lg-min-width; 
+    width: @lg-min-width - 30px; 
   }
 }
 
@@ -36,5 +30,6 @@
 .row {
   display: flex;
   flex-direction: row;
+  
   flex-wrap: wrap;
 }
