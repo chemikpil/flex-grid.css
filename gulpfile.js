@@ -13,7 +13,7 @@ gulp.task('styles', function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(prefix('last 1 version'))
+    .pipe(prefix('last 2 version'))
     .pipe(gulp.dest('./'))
     .pipe(minifyCSS())
     .pipe(rename({suffix: '.min'}))
