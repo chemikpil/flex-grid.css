@@ -6,14 +6,12 @@
   padding-left: @grid-gutter-width / 2;
   padding-right: @grid-gutter-width / 2;
   
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   flex-basis: 100%;
   max-width: 100%;
   
   box-sizing: border-box;
 }
-
-.cols-loop(@cols, -);
 
 @media (min-width: @sm-min-width) {
   .cols-loop(@cols, -sm-);
