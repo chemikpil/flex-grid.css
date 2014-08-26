@@ -1,0 +1,61 @@
+/*** align-items.less ***/
+
+.generate-align-item (@prefix:~'') {
+  .row--@{prefix}align-start {
+    align-items: flex-start; 
+  }
+
+  .row--@{prefix}align-end {
+    align-items: flex-end; 
+  }
+
+  .row--@{prefix}align-center {
+    align-items: center; 
+  }
+
+  .row--@{prefix}align-stretch {
+    align-items: stretch; 
+  }
+
+  .row--@{prefix}align-baseline {
+    align-items: baseline; 
+  }
+  
+  .col--@{prefix}align-auto {
+    align-self: auto;
+  }
+
+  .col--@{prefix}align-start {
+    align-self: flex-start; 
+  }
+
+  .col--@{prefix}align-end {
+    align-self: flex-end; 
+  }
+
+  .col--@{prefix}align-center {
+    align-self: center; 
+  }
+
+  .col--@{prefix}align-baseline {
+    align-self: baseline; 
+  }
+
+  .col--@{prefix}align-stretch {
+    align-self: stretch; 
+  }
+}
+
+.generate-align-item();
+
+@media (min-width: @sm-min-width) {
+  .generate-align-item(sm-);
+}
+
+@media (min-width: @md-min-width) {
+  .generate-align-item(md-);
+}
+
+@media (min-width: @lg-min-width) {
+  .generate-align-item(lg-);
+}

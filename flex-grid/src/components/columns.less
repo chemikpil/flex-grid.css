@@ -1,0 +1,28 @@
+/*** columns.less ***/
+
+[class^="col-"], [class*=" col-"] {
+  position: relative;
+  min-height: 1px;
+  padding-left: @grid-gutter-width / 2;
+  padding-right: @grid-gutter-width / 2;
+  
+  flex: 1 0 auto;
+  flex-basis: 100%;
+  max-width: 100%;
+  
+  box-sizing: border-box;
+}
+
+.cols-loop(@cols);
+
+@media (min-width: @sm-min-width) {
+  .cols-loop(@cols, sm-);
+}
+
+@media (min-width: @md-min-width) {
+  .cols-loop(@cols, md-);
+}
+
+@media (min-width: @lg-min-width) {
+  .cols-loop(@cols, lg-);
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flex-grid.css</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+
+  <link rel="dns-prefetch" href="http://fonts.googleapis.com">
+  
+<!--  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flex-grid.min.css">
+</head>
+<body>
+  
+  <h3>Basic grid</h3>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+      <div class="col-sm-1">.col-sm-1</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8">.col-sm-8</div>
+      <div class="col-sm-4">.col-sm-4</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">.col-sm-4</div>
+      <div class="col-sm-4">.col-sm-4</div>
+      <div class="col-sm-4">.col-sm-4</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">.col-sm-6</div>
+      <div class="col-sm-6">.col-sm-6</div>
+    </div>
+  </div>
+  
+  <h3>Mixed grid</h3>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
+      <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 col-md-4">.col-sm-2 .col-md-4</div>
+      <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+      <div class="col-sm-4 col-md-4">.col-sm-4 .col-md-4</div>
+    </div>
+  </div>
+  
+  <h3>Nested grid</h3>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        .col-sm-12
+        
+        <div class="row">
+          <div class="col-sm-6">.col-sm-6</div>
+          <div class="col-sm-6">.col-sm-6</div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  
+  <h3>Mobile row</h3>
+  
+  <div class="container">
+    <p>.row--sm-justify-center</p>
+    <div class="row-xs row--justify-center">
+      <div class="col-1">.col-sm-1</div>
+      <div class="col-1">.col-sm-1</div>
+    </div>
+    <p>.row--sm-justify-between</p>
+    <div class="row-xs row--justify-between">
+      <div class="col-1">.col-sm-1</div>
+      <div class="col-1">.col-sm-1</div>
+    </div>
+  </div>
+  
+  <h3>Justify columns</h3>
+  
+  <div class="container">
+    <p>.row--justify-center</p>
+    <div class="row row--justify-center">
+      <div class="col-sm-2">.col-sm-2</div>
+      <div class="col-sm-2">.col-sm-2</div>
+    </div>
+    <p>.row--justify-between</p>
+    <div class="row row--justify-between">
+      <div class="col-sm-2">.col-sm-2</div>
+      <div class="col-sm-2">.col-sm-2</div>
+    </div>
+  </div>
+  
+  <h3>Align content</h3>
+  
+  <div class="container">
+    <p>.row--align-center</p>
+    <div class="row row--align-center">
+      <div class="col-sm-2">.col-sm-2</div>
+      <div class="col-sm-2">.col-sm-2<br>next line</div>
+    </div>
+    <p>.row--align-stretch</p>
+    <div class="row row--align-stretch">
+      <div class="col-sm-2">.col-sm-2</div>
+      <div class="col-sm-2">.col-sm-2<br>next line</div>
+    </div>
+    <p>.col--align-stretch</p>
+    <div class="row row--align-center">
+      <div class="col-sm-2">.col-sm-2</div>
+      <div class="col-sm-2">.col-sm-2<br>next line</div>
+      <div class="col-sm-2 col--align-stretch">.col-sm-2</div>
+    </div>
+  </div>
+  
+  <h3>Reverse cols</h3>
+  
+  <div class="container">
+    <div class="row row--reverse">
+      <div class="col-sm-5">.col-sm-5</div>
+      <div class="col-sm-7">.col-sm-7</div>
+    </div>
+  </div>
+  
+  <h3>Col offset</h3>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col--offset-3">.col-sm-3 .col--offset-3</div>
+    </div>
+  </div>
+  
+</body>
+</html>
