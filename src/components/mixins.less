@@ -16,25 +16,3 @@
   }
   .cols-loop(@i - 1, @prefix);
 }
-
-.generate-justify-content (@prefix:~'') {
-  .row--@{prefix}justify-start {
-    justify-content: flex-start; 
-  }
-
-  .row--@{prefix}justify-end {
-    justify-content: flex-end; 
-  }
-
-  .row--@{prefix}justify-center {
-    justify-content: center; 
-  }
-
-  .row--@{prefix}justify-between {
-    justify-content: space-between; 
-  }
-
-  .row--@{prefix}justify-around {
-    justify-content: space-around; 
-  } 
-}
