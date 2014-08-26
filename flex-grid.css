@@ -37,6 +37,22 @@
   margin-left: -15px;
   margin-right: -15px;
 }
+.row-xs {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
 @media (min-width: 768px) {
   .row {
     display: -webkit-box;
@@ -70,6 +86,90 @@
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.col-12 {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+.col-11 {
+  -webkit-flex-basis: 91.66666667%;
+      -ms-flex-preferred-size: 91.66666667%;
+          flex-basis: 91.66666667%;
+  max-width: 91.66666667%;
+  width: 91.66666667%;
+}
+.col-10 {
+  -webkit-flex-basis: 83.33333333%;
+      -ms-flex-preferred-size: 83.33333333%;
+          flex-basis: 83.33333333%;
+  max-width: 83.33333333%;
+  width: 83.33333333%;
+}
+.col-9 {
+  -webkit-flex-basis: 75%;
+      -ms-flex-preferred-size: 75%;
+          flex-basis: 75%;
+  max-width: 75%;
+  width: 75%;
+}
+.col-8 {
+  -webkit-flex-basis: 66.66666667%;
+      -ms-flex-preferred-size: 66.66666667%;
+          flex-basis: 66.66666667%;
+  max-width: 66.66666667%;
+  width: 66.66666667%;
+}
+.col-7 {
+  -webkit-flex-basis: 58.33333333%;
+      -ms-flex-preferred-size: 58.33333333%;
+          flex-basis: 58.33333333%;
+  max-width: 58.33333333%;
+  width: 58.33333333%;
+}
+.col-6 {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  max-width: 50%;
+  width: 50%;
+}
+.col-5 {
+  -webkit-flex-basis: 41.66666667%;
+      -ms-flex-preferred-size: 41.66666667%;
+          flex-basis: 41.66666667%;
+  max-width: 41.66666667%;
+  width: 41.66666667%;
+}
+.col-4 {
+  -webkit-flex-basis: 33.33333333%;
+      -ms-flex-preferred-size: 33.33333333%;
+          flex-basis: 33.33333333%;
+  max-width: 33.33333333%;
+  width: 33.33333333%;
+}
+.col-3 {
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+  max-width: 25%;
+  width: 25%;
+}
+.col-2 {
+  -webkit-flex-basis: 16.66666667%;
+      -ms-flex-preferred-size: 16.66666667%;
+          flex-basis: 16.66666667%;
+  max-width: 16.66666667%;
+  width: 16.66666667%;
+}
+.col-1 {
+  -webkit-flex-basis: 8.33333333%;
+      -ms-flex-preferred-size: 8.33333333%;
+          flex-basis: 8.33333333%;
+  max-width: 8.33333333%;
+  width: 8.33333333%;
 }
 @media (min-width: 768px) {
   .col-sm-12 {
@@ -327,5 +427,128 @@
             flex-basis: 8.33333333%;
     max-width: 8.33333333%;
     width: 8.33333333%;
+  }
+}
+/*** justify-content.less ***/
+.row--justify-start {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.row--justify-end {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.row--justify-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.row--justify-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.row--justify-around {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .row--sm-justify-start {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .row--sm-justify-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .row--sm-justify-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .row--sm-justify-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .row--sm-justify-around {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+}
+@media (min-width: 992px) {
+  .row--md-justify-start {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .row--md-justify-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .row--md-justify-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .row--md-justify-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .row--md-justify-around {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  .row--lg-justify-start {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .row--lg-justify-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .row--lg-justify-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .row--lg-justify-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .row--lg-justify-around {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
 }
