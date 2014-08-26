@@ -10,8 +10,8 @@
   margin-left: 100% / 12 * @col;
 }
 
-.cols-loop (@i, @prefix) when (@i > 0) {
-  .col@{prefix}@{i} {
+.cols-loop (@i, @prefix:~'') when (@i > 0) {
+  .col-@{prefix}@{i} {
     .column-size(@i);
   }
   .cols-loop(@i - 1, @prefix);
