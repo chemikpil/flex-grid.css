@@ -8,7 +8,7 @@ var watch = require('gulp-watch');
 var rename = require('gulp-rename');
 var path = require('path');
 
-gulp.task('styles', function () {
+gulp.task('build', function () {
   gulp.src('./src/*.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
@@ -24,6 +24,6 @@ gulp.task('styles', function () {
 gulp.task('watch', function() {
   gulp.src('./src/**/*.less')
     .pipe(watch({ emit: 'all' }, function(files) {
-      gulp.run('styles');
+      gulp.run('build');
     }));
 });
